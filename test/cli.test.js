@@ -7,9 +7,9 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const BIN = path.resolve(__dirname, '../bin/diffslop.js');
 
-test('CLI --version prints 0.1.0', () => {
+test('CLI --version prints 0.1.1', () => {
   const out = execFileSync('node', [BIN, '--version'], { encoding: 'utf8' }).trim();
-  assert.strictEqual(out, '0.1.0');
+  assert.strictEqual(out, '0.1.1');
 });
 
 test('CLI --help prints usage instructions', () => {

@@ -81,7 +81,7 @@ function main() {
   }
 
   if (options.version) {
-    console.log('0.1.0');
+    console.log('0.1.1');
     process.exit(0);
   }
 

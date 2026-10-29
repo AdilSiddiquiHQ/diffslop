@@ -2,6 +2,10 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-10-29
+
+Public registry release and initial npm distribution.
+
 ## [0.1.0] - 2026-10-29
 
 Initial release. Catch AI agent slop, weakened tests, and ghost code in your git diff before your human reviewers have to.

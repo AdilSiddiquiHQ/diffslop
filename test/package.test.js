@@ -11,7 +11,7 @@ test('package.json enforces hard invariants', () => {
   const pkg = JSON.parse(readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
 
   assert.strictEqual(pkg.name, 'diffslop');
-  assert.strictEqual(pkg.version, '0.1.0');
+  assert.strictEqual(pkg.version, '0.1.1');
   assert.strictEqual(pkg.type, 'module');
   assert.strictEqual(pkg.author, 'Adil Siddiqui');
   assert.strictEqual(pkg.license, 'MIT');

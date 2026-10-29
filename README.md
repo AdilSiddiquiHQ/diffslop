@@ -94,7 +94,7 @@ This is the real, measured output produced by `node scripts/demo.mjs` and verifi
 
 ### Agent Pull Request (`examples/shop-slop`)
 ```
-  diffslop v0.1.0 — AI Agent Diff & Slop Auditor
+  diffslop v0.1.1 — AI Agent Diff & Slop Auditor
 
   Slop Index: 34% [███████░░░░░░░░░░░░░] (HEAVY AGENT SLOP DETECTED (REJECT))
   Scanned 2 file(s), 56 added line(s), found 7 issue(s) on 7 line(s)
@@ -118,7 +118,7 @@ This is the real, measured output produced by `node scripts/demo.mjs` and verifi
 
 ### Clean Pull Request (`examples/shop-clean`)
 ```
-  diffslop v0.1.0 — AI Agent Diff & Slop Auditor
+  diffslop v0.1.1 — AI Agent Diff & Slop Auditor
 
   Slop Index: 0% [░░░░░░░░░░░░░░░░░░░░] (CLEAN DIFF (READY FOR REVIEW))
   Scanned 2 file(s), 92 added line(s), found 0 issue(s) on 0 line(s)
@@ -159,7 +159,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: AdilSiddiquiHQ/diffslop@v0.1.0
+      - uses: AdilSiddiquiHQ/diffslop@v0.1.1
         with:
           since: origin/main
           fail-on-slop: "true"

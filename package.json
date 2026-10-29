@@ -1,6 +1,6 @@
 {
   "name": "diffslop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Catch AI agent slop, weakened tests, and ghost code in your git diff before your human reviewers have to.",
   "type": "module",
   "bin": {

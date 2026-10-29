@@ -55,7 +55,7 @@ function heroRows() {
   return [
     `<span class="g">$</span> <span class="b">npx diffslop</span> --since origin/main`,
     '',
-    `  <span class="bold">diffslop</span> <span class="d">v0.1.0 — AI Agent Diff &amp; Slop Auditor</span>`,
+    `  <span class="bold">diffslop</span> <span class="d">v0.1.1 — AI Agent Diff &amp; Slop Auditor</span>`,
     '',
     `  <span class="bold">Slop Index:</span> <span class="r bold">34%</span> [<span class="r">███████░░░░░░░░░░░░░</span>] <span class="d">(HEAVY AGENT SLOP DETECTED (REJECT))</span>`,
     `  <span class="d">Scanned 2 file(s), 56 added line(s), found 7 issue(s) on 7 line(s)</span>`,
