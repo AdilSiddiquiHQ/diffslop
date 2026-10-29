@@ -1,0 +1,52 @@
+{
+  "name": "diffslop",
+  "version": "0.1.0",
+  "description": "Catch AI agent slop, weakened tests, and ghost code in your git diff before your human reviewers have to.",
+  "type": "module",
+  "bin": {
+    "diffslop": "bin/diffslop.js"
+  },
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "scripts/diffslop.sh",
+    "action.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "gifs": "node scripts/make-gifs.mjs",
+    "check": "node scripts/check.js",
+    "readme": "node scripts/readme-check.mjs"
+  },
+  "keywords": [
+    "git-diff",
+    "ai-agents",
+    "coding-agents",
+    "code-review",
+    "code-quality",
+    "pull-request",
+    "linter",
+    "static-analysis",
+    "ci",
+    "zero-dependencies"
+  ],
+  "author": "Adil Siddiqui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdilSiddiquiHQ/diffslop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdilSiddiquiHQ/diffslop/issues"
+  },
+  "homepage": "https://github.com/AdilSiddiquiHQ/diffslop#readme"
+}

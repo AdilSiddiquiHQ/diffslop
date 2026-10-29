@@ -1,0 +1,42 @@
+name: diffslop
+description: Catch AI agent slop, weakened tests, and ghost code in your git diff before code review.
+author: Adil Siddiqui
+
+branding:
+  icon: filter
+  color: purple
+
+inputs:
+  since:
+    description: Git ref to diff against.
+    required: false
+    default: origin/main
+  max-index:
+    description: Maximum allowable Slop Index percentage (0 to 100).
+    required: false
+    default: "0"
+  fail-on-slop:
+    description: Exit with non-zero status if any slop is detected.
+    required: false
+    default: "true"
+  all:
+    description: Audit all tracked files in the repository instead of only diff.
+    required: false
+    default: "false"
+  staged:
+    description: Audit staged git changes.
+    required: false
+    default: "false"
+
+runs:
+  using: composite
+  steps:
+    - name: Run diffslop gate
+      shell: bash
+      run: bash "${{ github.action_path }}/scripts/diffslop.sh"
+      env:
+        INPUT_SINCE: ${{ inputs.since }}
+        INPUT_MAX_INDEX: ${{ inputs.max-index }}
+        INPUT_FAIL_ON_SLOP: ${{ inputs.fail-on-slop }}
+        INPUT_ALL: ${{ inputs.all }}
+        INPUT_STAGED: ${{ inputs.staged }}
